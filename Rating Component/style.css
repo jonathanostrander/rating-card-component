@@ -1,0 +1,148 @@
+:root {
+	--orange: hsl(25, 97%, 53%);
+	--white: hsl(0, 0%, 100%);
+	--light-gray: hsl(217, 12%, 63%);
+	--medium-gray: hsl(216, 10%, 19%);
+	--dark-blue: hsl(213, 18%, 12%);
+	--very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/* CSS RESET PICCALIL */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+body {
+	font-family: "Overpass", sans-serif;
+	font-size: 15px;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--very-dark-blue);
+}
+
+.card {
+	width: 450px;
+	height: 455px;
+	background-color: var(--dark-blue);
+	padding: 2.5rem;
+	border-radius: 1.75rem;
+}
+
+/* .rating-card {
+	display: none; 
+} */
+
+.favorite {
+	background-color: var(--medium-gray);
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	color: var(--white);
+	padding: 2rem 0 1rem 0;
+}
+
+.feedback {
+	color: var(--light-gray);
+	line-height: 25px;
+}
+
+.rating-circles {
+	justify-content: space-between;
+	padding: 2rem 0;
+}
+
+.rating-circle {
+	background-color: var(--medium-gray);
+	color: var(--light-gray);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.rating-circle:hover {
+	background-color: var(--light-gray);
+	color: white;
+}
+
+.selected,
+.rating-circle:active,
+.selected:hover {
+	background-color: var(--orange);
+	color: var(--white);
+}
+
+.submit-btn {
+	color: var(--white);
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 2.5px;
+	width: 100%;
+	background-color: var(--orange);
+	padding: 1rem 0;
+	border-radius: 30px;
+	border: none;
+}
+
+.submit-btn:active {
+	transform: scale(0.95);
+}
+
+.submit-btn:hover {
+	background-color: var(--white);
+	color: var(--orange);
+}
+
+.thank-you {
+	flex-direction: column;
+	display: none;
+}
+
+.selected-rating {
+	background-color: var(--medium-gray);
+	color: var(--orange);
+	margin-top: 2rem;
+	padding: 0.5rem 1.5rem;
+	border-radius: 20px;
+}
+
+.feedback {
+	width: 92%;
+	text-align: center;
+}
